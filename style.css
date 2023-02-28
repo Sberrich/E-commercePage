@@ -1,0 +1,183 @@
+/* Import the font */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1em;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.list1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3em;
+  list-style: none;
+}
+
+.list1 li a {
+  color: hsl(219, 9%, 45%);
+  opacity: 20;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.list1 li a:hover {
+  color: hsl(220, 13%, 13%);
+  opacity: 20;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+}
+
+.list2 li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.list2 {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3em;
+  list-style: none;
+}
+.list2 li {
+  cursor: pointer;
+}
+
+.avatar {
+  width: 3.125em;
+  height: 3.125em;
+  border-radius: 50%;
+}
+.avatar:hover {
+  border: 2px solid;
+  color: hsl(26, 100%, 55%);
+  transition: ease-in;
+}
+
+/* Sections */
+.second-section {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px;
+  display: flex;
+
+  justify-content: center;
+}
+.left {
+  flex-basis: 50%;
+  padding: 10px;
+}
+.left img {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+.right {
+  flex-basis: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.right p {
+  color: hsl(219, 9%, 45%);
+}
+.right h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: hsl(26, 100%, 55%);
+}
+.right h1 {
+  color: hsl(220, 13%, 13%);
+
+  font-size: 2em;
+  font-weight: 800;
+}
+.prices {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.prices span {
+  color: hsl(26, 100%, 55%);
+  background-color: hsl(25, 100%, 94%);
+  padding: 5px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.discount h3 {
+  color: hsl(219, 9%, 45%);
+  opacity: 50%;
+  margin-top: 0;
+  padding-top: 0;
+  text-decoration: line-through;
+}
+.attribution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-size: 1em;
+  font-weight: 800;
+  color: hsl(219, 9%, 45%);
+}
+
+.attribution a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.buttons-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+
+.buttons-list .minus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .second-section {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    flex-basis: 100%;
+  }
+}
